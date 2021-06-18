@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+   </head>
+   <body>
+      <nav>
+         <ul>
+            <li class="logo">MOODMUSIC</li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+               <li><a href="Home.html">Home</a></li>
+               <li><a href="Mood.html">Mood</a></li>
+               <li><a href="imageuploader.html">Playlist</a></li>
+               <li><a href="Artist.html">Artists</a></li>
+               <li><a href="Moodtest.html">Mood Test</a></li>
+               <li><a href="Login.php">Logout</a></li>
+            </div>
+            <li class="search-icon">
+               <input type="search" placeholder="Search">
+               <label class="icon">
+               <span class="fas fa-search"></span>
+               </label>
+            </li>
+         </ul>
+      </nav>
+      <script>
+         $('nav ul li.btn span').click(function(){
+           $('nav ul div.items').toggleClass("show");
+           $('nav ul li.btn span').toggleClass("show");
+         });
+      </script>
+      <div class="banner-text">
+         <h1><span> <br>Music </span> is the language</br> of the spirit.</h1>
+         <p>It opens the secret of life bringing peace, abolishing strife.</p>
+<button class="my-button" onclick="myfunction()" > Explore Moods</button>
+<button class="my-button-2" onclick="myfunction1()" >Explore Artists</button>
+ </div>
+ <script>
+     function myfunction()
+     {
+         window.location="Mood.html";
+     
+     }
+     
+     </script>
+      <script>
+         function myfunction1()
+         {
+             window.location="Artist.html";
+         
+         }
+         
+         </script>
+   </body>
+</html>

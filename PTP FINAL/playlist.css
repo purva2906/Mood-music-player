@@ -1,0 +1,302 @@
+body{
+    margin:0;
+    padding:0;
+    background-image:url(mood.jpg);
+    background-size: 800%;
+}
+nav{
+    background: black;
+    padding: 10px 40px 10px 70px;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul li.logo{
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+    color: #f2f2f2;
+  }
+  nav ul div.items{
+    padding: 0 25px;
+    display: inline-flex;
+  }
+  nav ul div.items a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+    color: #f2f2f2;
+  }
+  nav ul div.items a:hover{
+    color: cyan;
+  }
+  nav ul .search-icon{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+  }
+  nav ul .search-icon input{
+    height: 100%;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+  }
+  nav ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #cccccc;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  nav ul .search-icon .icon:hover{
+    background: #e6e6e6;
+  }
+  nav ul .search-icon .icon span{
+    color: #222222;
+    font-size: 18px;
+  }
+  nav ul li.btn{
+    font-size: 29px;
+    flex: 1;
+    padding: 0 40px;
+    display: none;
+    color: #f2f2f2;
+  }
+  nav ul li.btn span{
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #151515;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  nav ul li.btn span.show:before{
+    content: '\f00d';
+  }
+  @media screen and (max-width: 1052px) {
+    nav{
+      padding: 10px 40px 10px 0px;
+    }
+    nav ul li.logo{
+      display: none;
+    }
+    nav ul div.items{
+      flex: 4;
+    }
+  }
+  @media screen and (max-width: 800px){
+    nav ul li.btn{
+      display: block;
+    }
+    nav{
+      z-index: 1;
+      padding: 9px 40px 9px 0;
+    }
+    nav ul div.items{
+      z-index: -1;
+      position: fixed;
+      top: -220px;
+      right: 0;
+      width: 100%;
+      background: #222222;
+      display: inline-block;
+      transition: top .4s;
+    }
+    nav ul div.items.show{
+      top: 60px;
+    }
+    nav ul div.items li{
+      text-align: center;
+      line-height: 30px;
+      margin: 30px 0;
+    }
+    nav ul div.items li a{
+      font-size: 19px;
+    }
+  }
+  @media screen and (max-width: 405px) {
+    nav ul{
+      flex-wrap: nowrap;
+    }
+    nav ul li.search{
+      width: 50vmin;
+    }
+    nav ul li input{
+      width: 40vmin;
+    }
+    nav ul li .search-icon{
+      width: 10vmin;
+    }
+  }
+
+.FormContainer {
+    display: none;
+    width: 260px;
+    height: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: #ffffff;
+    position: fixed;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.CreatePlaylist{
+    position: relative;
+    bottom: 3.5%;
+}
+
+.FormContainer,
+.CreatePlaylist,
+.FormButton {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+
+
+
+
+.FormTitle {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+
+
+.Input {
+    margin-bottom: 1rem;
+}
+
+.Input2 {
+    margin-bottom: 1rem;
+    margin-left: 25px;
+}
+.InputText {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.InputText:focus {
+    border-color: hsl(226, 100%, 50%);
+    background: #ffffff;
+}
+
+
+
+.FormButton {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background: hsl(226, 100%, 50%);
+    margin-bottom: 0;
+}
+
+.FormButton:hover {
+    background: hsl(226, 100%, 34%);
+}
+
+.FormButton:active {
+    transform: scale(0.98);
+}
+
+/*division */
+
+.imagepreview{
+    width: 200px;
+    height: 200px;
+    border: 2px solid hsla(0, 2%, 73%, 0.719);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:hsla(0, 0%, 71%, 0.596) ;
+}
+
+.imagePreviewImage{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#picfile{
+    background: hsl(189, 100%, 93%);
+    border: none;
+    border-radius: 5px;
+    color: rgba(0, 65, 163, 0.699);
+    outline: none;
+    display: inline-block;
+    width: 200px;
+    font-size: 15px;
+}
+
+::-webkit-file-upload-button{
+    background: hsl(180, 84%, 64%);
+    outline: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgba(153, 153, 153, 0.548);
+}
+
+::-webkit-file-upload-button:hover{
+    background:hsl(246, 98%, 33%) ;
+    color:rgba(255, 255, 255, 0.979) ;
+}
+
+.close{
+    background: none;      
+    width: 30px;
+    height: 25px;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: 295px;
+    border: none;
+    font-size: 20px;
+    color: hsla(0, 0%, 55%, 0.856);
+    font-weight: bold;
+}
+
+.close:hover{
+    background-color: hsl(0, 100%, 73%);
+    color: hsla(0, 0%, 100%, 0.979);
+}

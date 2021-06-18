@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+    <!--Bootstraps CSS -->
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--APlayer CSS-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+    <link rel="stylesheet" href="mood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="index.js"></script>
+    <title>Artists</title>
+</head>
+<body>
+    <nav>
+        <ul>
+           <li class="logo">MOODMUSIC</li>
+           <li class="btn"><span class="fas fa-bars"></span></li>
+           <div class="items">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Mood.html">Mood</a></li>
+            <li><a href="imageuploader.html">Playlist</a></li>
+            <li><a href="Artist.html">Artists</a></li>
+            <li><a href="Moodtest.html">Mood Test</a></li>
+            <li><a href="Login.php">Logout</a></li>
+           </div>
+
+        </ul>
+     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-mid-12">
+            </div>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="artist1.html"> <img src= "ariijit.jpg">
+                </a>
+                <h4>ARIIJIT SINGH</h4>
+                <p>Best songs of ariijit singh.</p>
+            </div>
+            
+        <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="artist2.html"> <img src= "atif.jpg"
+                </a> </a>
+                <h4>ATIF ASLAM</h4>
+                <p>Best songs of atif aslam.</p>
+            </div>
+        
+        <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="artist3.html"> <img src= "neeti.jpg" 
+                </a></a>
+                <h4>NEETI MOHAN</h4>
+                <p>Best songs of neeti mohan. </p>
+            </div>
+       
+        <br>
+            
+            <div class="col-md-4 col-md-offset-2">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="artist4.html"> <img src= "ed sheeran.jpg"
+                </a> </a>
+                <h4>ED SHEERAN</h4>
+                <p>Best songs of ed sheeran.</p>
+            </div>
+            
+            <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="artist5.html"> <img src= "shawn mendes.jpg"
+                </a></a>
+                <h4>SHAWN MENDES</h4>
+                <p>Best songs of shawn mendes.</p>
+            </div>
+        
+        <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="artist6.html"> <img src= "taylor.jpg"
+                </a> </a>
+                <h4>TAYLOR SWIFT</h4>
+                <p>Best songs of shawn mendes.</p>
+            </div>
+
+        </div> 
+        
+</div>        
+
+     <div id="aplayer"></div>
+
+
+     <!-- Jquery Link -->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+     <!-- Bootstrap Link -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.win.js"></script>
+     <!-- APlayer Jquery link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+
+     <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            listFolded: true,
+            audio:[{
+                name: 'name',
+                artist: 'artist',
+                url: 'url.mp3',
+                cover: 'cover.jpg'
+            }]
+             
+        });
+     </script>
+
+
+
+
+
+    
+</body>
+</html>

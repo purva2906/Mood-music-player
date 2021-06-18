@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="playlistpage.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+           <li class="logo">MOODMUSIC</li>
+           <li class="btn"><span class="fas fa-bars"></span></li>
+           <div class="items">
+              <li><a href="Home.html">Home</a></li>
+              <li><a href="Mood.html">Mood</a></li>
+              <li><a href="imageuploader.html">Playlist</a></li>
+              <li><a href="Artist.html">Artists</a></li>
+              <li><a href="Moodtest.html">Mood Test</a></li>
+              <li><a href="Login.php">Logout</a></li>
+           </div>
+          
+        </ul>
+     </nav>
+    <div class="container">
+        <a href="myplaylist.html"> <img src="myplaylist.jpg" alt="playlistCover" class="image">
+        </a>
+        <div class="text">My Playlist</div>
+    </div>
+
+    <div class="container" id="CPbtn">
+        <img src="plus2.png" alt="playlistCover" class="Plus">
+        <div class="text">Create playlist</div>
+    </div>
+    
+    <div class="FormContainer">
+        <button class="close" onclick="closepopup()">X</button>
+          <form class="CreatePlaylist" id="CreatePlaylist">
+            <h1 class="FormTitle">Create Playlist</h1>
+            <div class="Input">
+                <input type="text" class="InputText" placeholder="Playlist Name">
+            </div>
+            <div class="Input2">
+                <input id="picfile" type="file" accept="image/*">
+                <div class="imagepreview" id="imagepreview">
+                    <img src="" alt="Image preview" class="imagePreviewImage">
+                    <span class="text2">Image preview</span>
+                </div>
+            </div>
+    <button class="FormButton" type="submit" onclick="closepopup()">Continue</button>
+    </form>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+
+</html>

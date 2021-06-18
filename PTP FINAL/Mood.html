@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+    <!--Bootstraps CSS -->
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--APlayer CSS-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"/>
+    <link rel="stylesheet" href="mood.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="index.js"></script>
+    <title>Online music streaming website using html,css And javascript</title>
+</head>
+<body>
+    <nav>
+        <ul>
+           <li class="logo">MOODMUSIC</li>
+           <li class="btn"><span class="fas fa-bars"></span></li>
+           <div class="items">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Mood.html">Mood</a></li>
+            <li><a href="imageuploader.html">Playlist</a></li>
+            <li><a href="Artist.html">Artists</a></li>
+            <li><a href="Moodtest.html">Mood Test</a></li>
+            <li><a href="Login.php">Logout</a></li>
+           </div>
+
+        </ul>
+     </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-mid-12">
+            </div>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="happy songs.html"> <img src= "img1.jpeg">
+                </a>
+                <h4>HAPPY SONGS</h4>
+                <p>Happy songs bring the scent of Heaven.</p>
+            </div>
+            
+        <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="sad songs.html"> <img src= "img2.jpg"
+                </a> </a>
+                <h4>SAD SONGS</h4>
+                <p>Music touches us emotionally, words alone can’t.</p>
+            </div>
+        
+        <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="romantic songs.html"> <img src= "img3.jpg" 
+                </a></a>
+                <h4>ROMANTIC SONGS</h4>
+                <p>And suddenly all the songs were about you. </p>
+            </div>
+       
+        <br>
+            
+            <div class="col-md-4 col-md-offset-2">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="peaceful songs.html"> <img src= "img4.jpg"
+                </a> </a>
+                <h4>PEACEFUL SONGS</h4>
+                <p>Music is what tell us that the human race is greater than we realize.</p>
+            </div>
+            
+            <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="silent songs.html"> <img src= "img5.jpg"
+                </a></a>
+                <h4>Silent SONGS</h4>
+                <p>After silence, that which comes nearest to expressing the inexpressible is music</p>
+            </div>
+        
+        <br>
+            
+            <div class="col-md-4">
+                <a href="javascript:void();" class="album-poster">
+                    <a href="energetic songs.html"> <img src= "img6.jpg"
+                </a> </a>
+                <h4>ENERGETIC SONGS</h4>
+                <p>I merely took the energy it takes to pout and wrote some blues.</p>
+            </div>
+
+        </div> 
+        
+</div>        
+
+     <div id="aplayer"></div>
+
+
+     <!-- Jquery Link -->
+     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+     <!-- Bootstrap Link -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.win.js"></script>
+     <!-- APlayer Jquery link -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
+
+
+     <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            listFolded: true,
+            audio:[{
+                name: 'name',
+                artist: 'artist',
+                url: 'url.mp3',
+                cover: 'cover.jpg'
+            }]
+             
+        });
+     </script>
+
+
+
+
+
+    
+</body>
+</html>

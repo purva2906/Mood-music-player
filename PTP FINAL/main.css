@@ -1,0 +1,155 @@
+.FormContainer {
+    display: none;
+    width: 260px;
+    height: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    background: #ffffff;
+    position: fixed;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.CreatePlaylist{
+    position: relative;
+    bottom: 3.5%;
+}
+
+.FormContainer,
+.CreatePlaylist,
+.FormButton {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+
+
+
+
+.FormTitle {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+
+
+.Input {
+    margin-bottom: 1rem;
+}
+
+.Input2 {
+    margin-bottom: 1rem;
+    margin-left: 25px;
+}
+.InputText {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.InputText:focus {
+    border-color: hsl(226, 100%, 50%);
+    background: #ffffff;
+}
+
+
+
+.FormButton {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    background: hsl(226, 100%, 50%);
+    margin-bottom: 0;
+}
+
+.FormButton:hover {
+    background: hsl(226, 100%, 34%);
+}
+
+.FormButton:active {
+    transform: scale(0.98);
+}
+
+/*division */
+
+.imagepreview{
+    width: 200px;
+    height: 200px;
+    border: 2px solid hsla(0, 2%, 73%, 0.719);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:hsla(0, 0%, 71%, 0.596) ;
+}
+
+.imagePreviewImage{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#picfile{
+    background: hsl(189, 100%, 93%);
+    border: none;
+    border-radius: 5px;
+    color: rgba(0, 65, 163, 0.699);
+    outline: none;
+    display: inline-block;
+    width: 200px;
+    font-size: 15px;
+}
+
+::-webkit-file-upload-button{
+    background: hsl(180, 84%, 64%);
+    outline: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    color: rgba(153, 153, 153, 0.548);
+}
+
+::-webkit-file-upload-button:hover{
+    background:hsl(246, 98%, 33%) ;
+    color:rgba(255, 255, 255, 0.979) ;
+}
+
+.close{
+    background: none;      
+    width: 30px;
+    height: 25px;
+    border-radius: 2px;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    left: 295px;
+    border: none;
+    font-size: 20px;
+    color: hsla(0, 0%, 55%, 0.856);
+    font-weight: bold;
+}
+
+.close:hover{
+    background-color: hsl(0, 100%, 73%);
+    color: hsla(0, 0%, 100%, 0.979);
+}
